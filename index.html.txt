@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tragbarer Smoothie-Mixer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #ff6f61, #ffcc70);
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #fff;
+            color: #ff6f61;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #f3f3f3;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .features, .reviews {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .feature, .review {
+            flex: 1 1 300px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            background: #fafafa;
+            transition: transform 0.3s;
+        }
+        .feature:hover, .review:hover {
+            transform: translateY(-5px);
+        }
+        .feature h3, .review h3 {
+            margin-bottom: 15px;
+            color: #ff6f61;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .contact button {
+            padding: 12px;
+            background: #ff6f61;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+        .contact button:hover {
+            background: #e65b50;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tragbarer Smoothie-Mixer</h1>
+        <p>Gesunde Smoothies jederzeit und überall genießen!</p>
+        <a href="#contact" class="btn">Jetzt bestellen</a>
+    </header>
+
+    <section class="features">
+        <div class="feature">
+            <h3>Leistungsstarker Motor</h3>
+            <p>Der Mixer zerkleinert mühelos Früchte, Nüsse und Eiswürfel.</p>
+        </div>
+        <div class="feature">
+            <h3>USB-Wiederaufladbar</h3>
+            <p>Überall bequem per USB aufladen – ideal für unterwegs.</p>
+        </div>
+        <div class="feature">
+            <h3>Sicher & BPA-frei</h3>
+            <p>Gesundheit geht vor: Materialien ohne schädliche Stoffe.</p>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <img src="https://via.placeholder.com/200" alt="Smoothie 1">
+        <img src="https://via.placeholder.com/200" alt="Smoothie 2">
+        <img src="https://via.placeholder.com/200" alt="Smoothie 3">
+        <img src="https://via.placeholder.com/200" alt="Smoothie 4">
+        <img src="https://via.placeholder.com/200" alt="Smoothie 5">
+        <img src="https://via.placeholder.com/200" alt="Smoothie 6">
+    </section>
+
+    <section class="reviews">
+        <div class="review">
+            <h3>Anna S.</h3>
+            <p>„Super praktisch für den Alltag – frische Smoothies im Büro sind jetzt kein Problem mehr!“</p>
+        </div>
+        <div class="review">
+            <h3>Michael T.</h3>
+            <p>„Kompakt, leistungsstark und einfach zu reinigen – genau das, was ich gesucht habe!“</p>
+        </div>
+        <div class="review">
+            <h3>Sophie L.</h3>
+            <p>„Der perfekte Begleiter für meine Fitness-Routine. Einfach top!“</p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 style="text-align:center; margin-bottom:20px;">Kontakt aufnehmen</h2>
+        <form>
+            <input type="text" placeholder="Ihr Name" required>
+            <input type="email" placeholder="Ihre E-Mail" required>
+            <textarea rows="5" placeholder="Ihre Nachricht" required></textarea>
+            <button type="submit">Absenden</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 Tragbarer Smoothie-Mixer | Alle Rechte vorbehalten.
+    </footer>
+</body>
+</html>
